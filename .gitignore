@@ -1,0 +1,5 @@
+mydjangosite_env
+*.log
+.python-version
+db.sqlite3
+.idea
