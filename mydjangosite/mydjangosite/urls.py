@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 from views import hello, current_datetime, hours_ahead
+from books import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +25,6 @@ urlpatterns = [
     path('time/', current_datetime),
     path('another-time-page/', current_datetime),
     path('time/plus/<int:offset>/', hours_ahead),
+    path('search-form/', views.search_form),
+    path('search/', views.search),
 ]
