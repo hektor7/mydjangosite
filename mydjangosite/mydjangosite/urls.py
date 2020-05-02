@@ -25,6 +25,5 @@ urlpatterns = [
     path('time/', current_datetime),
     path('another-time-page/', current_datetime),
     path('time/plus/<int:offset>/', hours_ahead),
-    path('search-form/', views.search_form),
     path('search/', views.search),
 ]
