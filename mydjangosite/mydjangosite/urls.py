@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from views import hello, current_datetime, hours_ahead
+from views import hello, current_datetime, hours_ahead, contact
 from books import views
 
 urlpatterns = [
@@ -26,4 +26,5 @@ urlpatterns = [
     path('another-time-page/', current_datetime),
     path('time/plus/<int:offset>/', hours_ahead),
     path('search/', views.search),
+    path('contact/', contact),
 ]
